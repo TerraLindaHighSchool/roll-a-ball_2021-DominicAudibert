@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count" + count.ToString();
-        if(count >= 9)
+        countText.text = "Count " + count.ToString();
+        if(count > 9)
         {
             winTextObject.SetActive(true);
         }
@@ -53,7 +53,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            count++;
+            SetCountText();
         }
 
     }
