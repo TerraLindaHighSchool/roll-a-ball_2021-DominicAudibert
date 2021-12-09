@@ -10,7 +10,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10;
+    public float speed = 15;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
 
